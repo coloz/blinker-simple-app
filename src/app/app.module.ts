@@ -9,6 +9,10 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
+import { BLE } from '@ionic-native/ble';
+import { Zeroconf } from '@ionic-native/zeroconf';
+import { Diagnostic } from '@ionic-native/diagnostic';
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -16,7 +20,10 @@ import { AppRoutingModule } from './app-routing.module';
   providers: [
     StatusBar,
     SplashScreen,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+    BLE,
+    Zeroconf,
+    Diagnostic
   ],
   bootstrap: [AppComponent]
 })

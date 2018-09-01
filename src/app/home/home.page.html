@@ -1,12 +1,13 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      {{device.config.customName}}
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs">docs</a> will be your guide.</p>
+  <div>{{device.data.counter}}</div>
+  <ion-button shape="round" color="primary" fill="outline" (tap)="tap1()">点我计数</ion-button>
+  <ion-button size="small" (tap)="tap2()">点我开关灯</ion-button>
 </ion-content>
