@@ -9,7 +9,14 @@
 $ npm i ionic cordova -g  
 $ cd blinker-simple-app  
 $ npm i  
+```
+
+android：
+```
 $ ionic cordova build android  
+```
+ios:
+```
 $ ionic cordova build ios  
 ```
 
